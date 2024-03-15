@@ -1,27 +1,162 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+	font-family: "Helvetica", "Calibri", "Sans-Serif";
+	padding: 30px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn-group button {
+	background-color: white;
+	border: 2px solid black; /* Green border */
+	color: black; /* White text */
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left;
+	margin-right: 5px; /* Float the buttons side by side */
+	margin-bottom: 20px;
+	font-size: 18px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.createButton {
+	background-color: white;
+	border: 2px solid black; /* Green border */
+	color: black; /* White text */
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left;
+	margin-right: 5px; /* Float the buttons side by side */
+	margin-bottom: 20px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.Days {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.Days,
+td {
+	border: 1px solid black;
+}
+
+.Month {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.Dates {
+	height: 100pt;
+}
+
+td {
+	text-align: start;
+	vertical-align: top;
+}
+
+.month-name {
+	text-align: center;
+}
+
+.options-row {
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+.add-block button {
+	background-color: white;
+	border: 1px solid black; /* Green border */
+	color: black; /* White text */
+	padding: 7px 10px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left;
+	margin-right: 5px; /* Float the buttons side by side */
+	margin-bottom: 20px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.add-block::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.submit {
+	background-color: white;
+	border: 2px solid black; /* Green border */
+	color: black; /* White text */
+	padding: 7px 10px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left;
+	margin-right: 5px; /* Float the buttons side by side */
+	margin-bottom: 20px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.schedule-display {
+	float: left;
+	border: 1.5px solid black;
+	padding: 15px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+
+.assign-display {
+	clear: both;
+}
+
+.assign-display table {
+	width: 60%;
+	table-layout: fixed;
+}
+
+.assign-display select {
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.date-assignment {
+	clear: both;
+	margin-top: 40px;
+}
+
+.schedule-delete {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.schedule-delete button {
+	content: "";
+	clear: both;
+	display: table;
+	margin-top: 20px;
+}
+.days-delete input {
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+.edit-schedule {
+	content: "";
+	clear: both;
+	margin-top: 20px;
+}
+
+.edit-schedule button {
+	content: "";
+	clear: both;
+	margin-left: 10px;
+}
+
+.blue-time-selection option{
+	margin-top: 10;
 }
